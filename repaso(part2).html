@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title >Danza Cristiana</title>
+        <style> 
+        .menu {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align:center;
+        }
+        .menu a {
+            text-decoration:none;
+            color: #000;
+            margin: 0 10px;
+        }
+        .footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+        </style>
+</head>
+<body>
+    <!--MENU-->
+    <div class="menu">
+    <a href="#tabla1">Tipos de danzas</a>
+    <a href="#tabla2">Proximos Eventos</a>
+    <a href="#formulario">Registro para Taller</a>
+</div>
+    <!-- TABLA: TIPOS DE DANZAS--><table border="1" id="tabla1">
+        <tr>
+            <th>tipo de danza</th>
+            <th>Descripcion</th>
+        </tr>
+        <tr>
+            <td>Danza Liturgica</td>
+            <td>Danza que se realiza durante las misas</td>
+        </tr>
+        <tr>
+            <td>Danza de Alabanza</td>
+            <td>Danza que se realiza para alabar a Dios</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- TABLA 2: POXIMOS EVENTOS--><table border="1" id="tabla2">
+        <tr>
+            <th>Fecha</th>
+            <th>Evento</th>
+            <th>Lugar</th>
+        </tr>
+        <tr>
+            <td>20/08/2024</td>
+            <td>Concierto de Danza Cristiana</td>
+            <td>Iglesia de la Comunidad</td>
+        </tr>
+        <tr>
+            <td>15/09/2024</td>
+            <td>Taller de Danza Liturgica</td>
+            <td>Centro de Arte Cristiano</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <!--FROMULLARIO: REGISTRO PARA TALLER--> <form id="formulario">
+        <!-- Etiqueta input con atributos name, date, email, texto oculto -->
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre"><br><br>
+		<label for="fecha">Fecha de Nacimiento:</label>
+		<input type="date" id="fecha" name="fecha"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br>
+		<input type="hidden" id="textoOculto" name="textoOculto" value="DC2024"><br><br>
+		
+		<!-- Etiqueta textarea para texto -->
+		<label for="comentarios">Comentarios:</label>
+		<textarea id="comentarios" name="comentarios"></textarea><br><br>
+		
+		<!-- Etiqueta label -->
+		<label for="nivel">Nivel de Danza:</label>
+		<input type="radio" id="nivel" name="nivel" value="principiante"> Principiante
+		<input type="radio" id="nivel" name="nivel" value="intermedio"> Intermedio
+		<input type="radio" id="nivel" name="nivel" value="avanzado"> Avanzado
+
+        <!--Botones-->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+
+    <!--Footer-->
+    <div class="footer">
+        <p>&copy;Araceli</p>
+    </div>
+</body>
+</html>
